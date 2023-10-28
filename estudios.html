@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./assets-proyecto1/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets-proyecto1/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="./assets-proyecto1/css/reset.css">
+    <link rel="stylesheet" href="./assets-proyecto1/css/style.css">
+    <link rel="stylesheet" href="./assets-proyecto1/css/query.css">
+    <link rel="stylesheet" href="./assets-proyecto1/css/scroll.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Layout principal -->
+    <div class="layout">
+
+        <aside class="layout__aside">
+    <!-- Barra lateral usuario -->
+            <section class="aside__user--info">
+                <div class="user-info__general">
+    <!-- Información general del usuario -->
+                    <div class="user-info__container-imagen">
+                        <img src="./assets-proyecto1/img/pro.jpeg" class="user-info__image" alt="Imagen de perfil del usuario">
+                    </div>
+
+                    <h2 class="user-info__name">Carlos Morales</h2>
+                    <h3 class="user-info__job">Desarrollador web</h3>
+                </div>
+    <!-- Menú de navegación -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="./index.html" class="menu__link" title="link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="./aboutMe.html" class="menu__link " title="link">
+                                <i class="menu__icon fa-solid fa-user "></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="estudios.html" class="menu__link menu__link--active" title="link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Estudios</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portfolio.html" class="menu__link" title="link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link" title="link">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link" title="link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    <!-- Links redes sociales -->
+                <div class="user-info__links">
+
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="https://github.com/CarlosMorales34" title="link" class="social__link">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/carlos-alberto-morales-rojas-463001290/" title="link" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="#" title="link" class="social__link">
+                                <i class="social__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+    <!-- Boton -->
+                <div class="user-info__buttons">
+                    <a href="#" title="link" class="user-info__btn">Descargar CV</a>
+                </div>
+    <!-- Footer -->
+                <footer class="user-info__footer">
+                    &copy; 2023 Carlos Morales
+                </footer>
+            </section>
+        </aside>
+<!-- CONTENT -->
+        <main class="layout__content">
+
+            <section class="content__page content__resume">
+                <!-- Este contenido es cambiante -->
+                <header class="resume__header">
+                    <h1 class="resume__title"> Estudios</h1>
+                </header>
+
+                <div class="resume__container">
+
+                    <section class="resume__left">
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Formación</h2>
+                        </header>
+
+                        <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">04-Sep-2023</h4>
+                                    <span class="timeline__company">IBM</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Front End Developer</h3>
+                                    <p class="timeline__text">Certificación
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">4-Ago-2023</h4>
+                                    <span class="timeline__company">Platzi</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+                                
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Diseño para programadores</h3>
+                                    <p class="timeline__text">Certificación</p>
+                                </div>
+                            </article>
+                            
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Experiencia</h2>
+                        </header>
+
+                        <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2023</h4>
+                                    <span class="timeline__company">IBM</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+                                
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Portafolio</h3>
+                                    <p class="timeline__text">Creación de portafolio</p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2022</h4>
+                                    <span class="timeline__company">Proyecto Platzi conf</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollo de página</h3>
+                                    <p class="timeline__text">Desarrollo Front End</p>
+                                </div>
+                            </article>    
+                            
+                        </div>
+
+                    </section>
+
+                    <section class="resume__right">
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Habilidades de <span class="subtitle__color">diseño</span></h2> 
+                        </header>
+
+                        <div class="resume__skills">
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Diseño web</h4>
+                                <span class="skills__number">90%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p1"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Diseño mockups</h4>
+                                <span class="skills__number">80%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p2"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Diseño logos</h4>
+                                <span class="skills__number">60%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p3"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Diseño banners</h4>
+                                <span class="skills__number">60%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p4"></div>
+                            </div>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Habilidades de <span class="subtitle__color">código</span></h2>
+                        </header>
+
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Javascript</h4>
+                                <span class="skills__number">85%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p5"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">HTML</h4>
+                                <span class="skills__number">100%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p6"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">CSS</h4>
+                                <span class="skills__number">85%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p7"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">React</h4>
+                                <span class="skills__number">80%</span>
+                            </article>
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p8"></div>
+                            </div>
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Áreas de conocimientos</h2>
+                        </header>
+
+                        <div class="resume__knowledges">
+                            <ul class="knowledges__list">
+                                <li class="knowledges__option">Programación</li>
+                                <li class="knowledges__option">Desarrollo web</li>
+                                <li class="knowledges__option">Marketing digital</li>
+                                <li class="knowledges__option">Redes sociales</li>
+                                <li class="knowledges__option">Diseño web</li>
+                                <li class="knowledges__option">Psicologia</li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="resume__certificates">
+                    <header class="resume__subheader">
+                        <h2 class="resume__subtitle">Certificados</h2>
+                    </header>
+
+                    <section class="certificates__container">
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img src="./assets-proyecto1/img/IMB-Fron-End.png" alt="certificado" class="certificate__image">
+                            </div>
+
+                            <div class="certificates__content">
+                                <h4 class="certificate__titles">IBM Front End Developer</h4>
+
+                                <span class="certificate__id">ID:<a href="https://www.coursera.org/account/accomplishments/professional-cert/ZGP5E6HMA7HJ">Coursera</a> </span>
+                                <span class="certificate__date">4 de septiembre 2023</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img src="./assets-proyecto1/img/cerPla(1).png" alt="certificado" class="certificate__image">
+                            </div>
+
+                            <div class="certificates__content">
+                                <h4 class="certificate__titles">Diseño para para programadores</h4>
+
+                                <span class="certificate__id">ID: 1a0303-587</span>
+                                <span class="certificate__date">4 de agosto 2023</span>
+                            </div>
+                        </article>
+
+                    </section>
+                </div>
+
+            </section>
+            
+        </main>
+    </div>
+</body>
+
+</html>
