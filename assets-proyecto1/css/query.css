@@ -36,6 +36,7 @@
         grid-template-areas: 'content';
         grid-template-columns: 100%;
         overflow-x: hidden;
+        border-radius: 0;
     }
     /* TOGGLE */
     .layout__menu-toggle{
@@ -51,7 +52,7 @@
         text-align: center;
         background-color: var(--color-secondary);
         color: var(--color-principal);
-        border-radius: 3rem;
+        border-radius: 0;
         cursor: pointer;
         transition: all 500ms ease-in-out;
     }
