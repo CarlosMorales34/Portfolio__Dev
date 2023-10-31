@@ -16,7 +16,7 @@
 }
 /* Estilos generales */
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body{
     position: absolute;
@@ -192,7 +192,7 @@ body{
     display: block;
     position: absolute;
     top: 0;
-    right: -100px;
+    right: -10rem;
     min-width: 11rem;
     background-color: var(--color-transparent);
 }
@@ -285,10 +285,10 @@ body{
 .form-header__title::after{
     content: "";
     position: absolute;
-    width: 30px;
-    height: 25px;
-    top: 12px;
-    right: -10px;
+    width: 3rem;
+    height: 2.5rem;
+    top: 1.2rem;
+    right: -1rem;
     background-image: -moz-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
     background-size: 6px 6px;
     opacity: .4;
@@ -301,10 +301,10 @@ body{
 .contact_title::after{
     content: "";
     position: absolute;
-    width: 30px;
-    height: 25px;
-    top: 20px;
-    right: -17px;
+    width: 3rem;
+    height: 2.5rem;
+    top: 2rem;
+    right: -1.7rem;
     background-image: -moz-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
     background-size: 6px 6px;
     opacity: .4;
@@ -411,10 +411,10 @@ body{
 .prices__title::after{
     content: "";
     position: absolute;
-    width: 30px;
-    height: 20px;
-    top: 25px;
-    right: -15px;
+    width: 3rem;
+    height: 2rem;
+    top: 2.5rem;
+    right: -1.5rem;
     background-image: -moz-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
     background-size: 6px 6px;
     opacity: .4;
@@ -493,7 +493,7 @@ body{
     justify-content: space-between;
 }
 .clients__item {
-    width: 145px;
+    width: 14.5rem;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -542,8 +542,8 @@ body{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -3px;
-    height: 2px;
+    bottom: -.3rem;
+    height: .2rem;
     background-color: var(--color-secondary);
 }
 .prices__p {
@@ -672,7 +672,7 @@ body{
     position: absolute;
     top: 0;
     left: 30%;
-    bottom: -18px;
+    bottom: -1.8rem;
     width: 1px;
     background-color: var(--color-background-scrollbar);
 }
