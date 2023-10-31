@@ -33,10 +33,10 @@
         grid-template-areas: 'content';
         grid-template-columns: 100%;
     }
-    .loyaut__aside{
+    .layout__aside{
         display: none;
     }
-    .loyaut__content{
+    .layout__content{
         border-radius: 0;
         background-color: transparent;
         height: 100%;
