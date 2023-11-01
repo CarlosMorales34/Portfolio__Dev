@@ -8,6 +8,11 @@
     .layout{
         min-width: auto;
         width: 85%;
+        padding-bottom: 3rem;
+    }
+    footer{
+        padding-bottom: 3rem;
+
     }
 }
 @media (max-width: 1300px) {
