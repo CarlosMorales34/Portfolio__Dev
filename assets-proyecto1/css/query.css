@@ -164,9 +164,11 @@
     .content__page{
         border-radius: 0;
         height: 100vh;
-        margin-bottom: 100rem;
     }
 }@media (max-width: 800px){
+    .layout__content{
+        padding-bottom: 10rem;
+    }
     .reviews__container{
         flex-direction: column;
     }
