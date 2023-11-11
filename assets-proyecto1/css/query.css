@@ -164,7 +164,7 @@
     .content__page{
         border-radius: 0;
         height: 100vh;
-        margin-bottom: 55rem;
+        margin-bottom: 100rem;
     }
 }@media (max-width: 800px){
     .reviews__container{
