@@ -36,6 +36,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 });
+// VALIDAR FORM
+function validarFormulario() {
+    // Obtén los valores de los campos
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    // Realiza alguna validación básica (puedes expandir esto según tus necesidades)
+    if (name === "" || email === "" || subject === "" || message === "") {
+        alert("Por favor, completa todos los campos");
+        return false; // Evita que el formulario se envíe si hay campos vacíos
+    }
+
+    // Puedes realizar más validaciones según tus requisitos
+
+    // Si todos los campos están llenos, el formulario se enviará al servidor
+    return true;
+}
+
 
 
 

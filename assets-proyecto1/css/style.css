@@ -800,6 +800,12 @@ body{
     color: var(--color-subtittle);
     margin-bottom: 0.3rem;
 }
+.certificate__a{
+    transition: all 300ms ease-in-out;
+}
+.certificate__a:hover{
+    color: #0056d2;
+}
 .certificate__date{
     font-size: 1.1rem;
     color: var(--color-subtittle);
@@ -845,6 +851,7 @@ body{
 .gallery__image{
     transition: all 300ms ease-in-out;
 }
+
 .gallery__item:hover .gallery__image{
     transform: scale(1.1);
 }
