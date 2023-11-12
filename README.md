@@ -1,6 +1,7 @@
 # Portfolio-Dev-FronEnd -- Personal
 
-![Vista previa](url_de_la_imagen_de_vista_previa)
+![image](https://github.com/CarlosMorales34/Portfolio__Dev/assets/121272363/9f33badf-f840-430a-8297-4e7902fef8d5)
+
 
 Este es mi portafolio personal, creado con HTML, CSS y JavaScript. El portafolio es totalmente receptivo y utiliza una paleta de colores principal que incluye:
 
