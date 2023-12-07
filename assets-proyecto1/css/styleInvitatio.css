@@ -45,7 +45,7 @@ body{
 
     .subtittle {
         font-size: 1.5rem;
-        margin-top: 10rem;
+        margin-top: 12rem;
         animation-delay: 0s; /* Sin retraso para la primera frase */
     }
 
@@ -64,13 +64,13 @@ body{
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .container__map{
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .map-container{
         display: flex;
@@ -118,7 +118,7 @@ body{
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
     @keyframes typing {
         to {
