@@ -44,33 +44,33 @@ body{
     } 
 
     .subtittle {
-        font-size: 2.5rem;
-        margin-top: 15rem;
+        font-size: 1.5rem;
+        margin-top: 10rem;
         animation-delay: 0s; /* Sin retraso para la primera frase */
     }
 
     .textos {
-        font-size: 3rem;
+        font-size: 1.5rem;
         padding-top: 2.5rem;
         animation-delay: 3s; /* 3 segundos de retraso para la segunda frase */
     }
     
     .tittle {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-top: 1rem;
         animation-delay: 6s; /* 6 segundos de retraso para la tercera frase */
     }
     .container__contador{
         display: flex;
         justify-content: center;
-        font-size: 3rem;
-        margin-top: 3rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
     }
     .container__map{
         display: flex;
         justify-content: center;
-        font-size: 3rem;
-        margin-top: 3rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
     }
     .map-container{
         display: flex;
@@ -81,32 +81,32 @@ body{
     .container__form{
         display: flex;
         justify-content: center;
-        font-size: 2.5rem;
-        margin-top: 3rem;
+        font-size: 1rem;
+        margin-top: 2rem;
     }
     .invitadosInput{
         display: none;
     }
     .btn__cerrar{
         width: 10rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
         padding: 1rem;
         border-radius: 2rem;
         align-content: center;
     }
     .text__confimation{
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
     .asistencia{
         margin: 3rem;
         padding: .5rem;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .cantidadInvitados{
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .boton{
-        margin-top: 3rem;
+        margin-top: 2rem;
         padding: 1rem;
         border-radius: 2rem;
         align-content: center;
@@ -115,7 +115,7 @@ body{
         display: flex;
         justify-content: center;
         font-size: 3rem;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     @keyframes typing {
         to {
