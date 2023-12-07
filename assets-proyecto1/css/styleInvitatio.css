@@ -97,6 +97,9 @@ body{
     .text__confimation{
         margin-top: 3rem;
     }
+    .text__confimation2{
+        font-size: 1rem;
+    }
     .asistencia{
         margin: 3rem;
         padding: .5rem;
@@ -114,7 +117,7 @@ body{
     .texto_final{
         display: flex;
         justify-content: center;
-        font-size: 3rem;
+        font-size: 1.5rem;
         margin-top: 5rem;
     }
     @keyframes typing {
