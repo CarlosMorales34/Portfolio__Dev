@@ -161,6 +161,31 @@ body{
     font-size: 1.2rem;
 }
 /* Contenedor principal */
+.texto-escritura{
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    opacity: 0;
+}
+.texto-escritura::after {
+    content: "|";
+    display: inline-block;
+    width: 3px;
+    height: 1.2em; /* Ajusta la altura según tu preferencia */
+    background-color: #000;
+    margin-left: 5px; /* Espacio entre el texto y la barra */
+    animation: parpadeo .8s infinite;
+}
+
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+/* Contenedor principal */
 .layout__content{
     grid-area: content;
     height: 100%;

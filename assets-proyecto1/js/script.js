@@ -36,6 +36,61 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 });
+// EFECTO TEXTO
+const frasesDesarrollador = [
+    "Desarrollador web",
+    "Apasionado por la tecnología",
+    "Constructor de soluciones digitales",
+    "Innovador en el mundo web",
+  ];
+
+  function escribirTexto(elemento, texto, velocidad) {
+    elemento.innerHTML = "";
+    const longitud = texto.length;
+    let i = 0;
+
+    function agregarLetra() {
+      elemento.innerHTML += texto.charAt(i);
+      i++;
+
+      if (i < longitud) {
+        setTimeout(agregarLetra, velocidad);
+      }
+    }
+
+    agregarLetra();
+  }
+
+  function mostrarTexto(elemento) {
+    elemento.style.opacity = 1;
+  }
+
+  function cambiarFraseDesarrollador(elemento, frases, velocidad) {
+    let indiceFrase = 0;
+
+    function cambiarFrase() {
+      const fraseActual = frases[indiceFrase];
+      escribirTexto(elemento, fraseActual, velocidad);
+      indiceFrase = (indiceFrase + 1) % frases.length;
+    }
+
+    setInterval(cambiarFrase, 3000); // Cambia la frase cada 5 segundos
+  }
+
+  function iniciarEscritura() {
+    const nombreElemento = document.getElementById("frase1");
+    const jobElemento = document.getElementById("frase2");
+    const velocidad = 50;
+
+    mostrarTexto(nombreElemento);
+    setTimeout(() => {
+      mostrarTexto(jobElemento);
+      escribirTexto(jobElemento, frasesDesarrollador[0], velocidad);
+      cambiarFraseDesarrollador(jobElemento, frasesDesarrollador, velocidad);
+    }, 1000); // Espera 1 segundo antes de mostrar y escribir el segundo elemento
+  }
+
+  iniciarEscritura();
 // VALIDAR FORM
 function validarFormulario() {
     // Obtén los valores de los campos
