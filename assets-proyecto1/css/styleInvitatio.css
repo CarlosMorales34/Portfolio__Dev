@@ -1,0 +1,198 @@
+:root{
+    --color-principal: #C385AC;
+    --color-contraste:  #000000;
+    --color-secondary: #F0F0F0;
+    --color-acento: #FF00FF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    
+}
+body{
+    height: 100vh;
+    background-image: url(../img/fondo_decorativo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+    border-radius:3rem ;
+}
+.container__general{
+    height: 100vh;
+    font-size: 1.6rem;  /* 1rem = 10px*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 100%;
+    border: 2px solid #FF00FF;
+    border-radius:3rem ; 
+    overflow: hidden;   
+}
+
+@media only screen and (max-width: 768px){
+    .subtittle, .textos, .tittle,.container__contador, .texto__icon, .text__confimation,.texto_confirmacion2, .texto_final{
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        overflow: hidden; /* Oculta el texto que se desborda */
+        white-space: nowrap; /* Evita el salto de línea */
+        animation: typing 3s steps(40, end) forwards, colorChange 5s 5s forwards; /* Animación de escritura y cambio de color con retención de estilos finales */
+        width: 0; /* Inicia con ancho cero para ocultar el texto */
+    } 
+
+    .subtittle {
+        font-size: 2.5rem;
+        margin-top: 15rem;
+        animation-delay: 0s; /* Sin retraso para la primera frase */
+    }
+
+    .textos {
+        font-size: 3rem;
+        padding-top: 2.5rem;
+        animation-delay: 3s; /* 3 segundos de retraso para la segunda frase */
+    }
+    
+    .tittle {
+        font-size: 5rem;
+        margin-top: 1rem;
+        animation-delay: 6s; /* 6 segundos de retraso para la tercera frase */
+    }
+    .container__contador{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .container__map{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .map-container{
+        display: flex;
+        flex-direction: column;
+        display: none;
+        margin-top: 2rem;
+    }
+    .container__form{
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .invitadosInput{
+        display: none;
+    }
+    .btn__cerrar{
+        width: 10rem;
+        margin-top: 3rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        align-content: center;
+    }
+    .text__confimation{
+        margin-top: 6rem;
+    }
+    .asistencia{
+        margin: 3rem;
+        padding: .5rem;
+        font-size: 2.5rem;
+    }
+    .cantidadInvitados{
+        margin-top: 3rem;
+    }
+    .boton{
+        margin-top: 3rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        align-content: center;
+    }
+    .texto_final{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+    @keyframes typing {
+        to {
+            width: 100%;
+            color: var(--color-acento);
+        }
+    }
+
+    /* Agregamos un nuevo keyframe para el cambio de color */
+    @keyframes colorChange {
+        0% {
+            color: #000; /* Inicia con color negro */
+        }
+        50% {
+            color: var(--color-acento); /* Cambia a color acento a la mitad de la animación */
+        }
+        100% {
+            color: #000; /* Regresa a color negro al final de la animación */
+        }
+    }
+}
+
+
+.map-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lds-ripple {
+    display: none;
+    justify-content: center;
+    right: -25%;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid var(--color-acento);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}  
