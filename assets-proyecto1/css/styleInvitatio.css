@@ -45,13 +45,17 @@ body{
 
     .subtittle {
         font-size: 1.5rem;
+
         margin-top: 12rem;
+
         animation-delay: 0s; /* Sin retraso para la primera frase */
     }
 
     .textos {
-        font-size: 1.5rem;
-        padding-top: 2.5rem;
+
+        font-size: 3rem;
+        padding-top: 1.5rem;
+
         animation-delay: 3s; /* 3 segundos de retraso para la segunda frase */
     }
     
@@ -64,13 +68,17 @@ body{
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
+
         margin-top: 3rem;
+      
     }
     .container__map{
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
+
         margin-top: 3rem;
+
     }
     .map-container{
         display: flex;
@@ -82,7 +90,9 @@ body{
         display: flex;
         justify-content: center;
         font-size: 1rem;
-        margin-top: 2rem;
+
+        margin-top: 3rem;
+
     }
     .invitadosInput{
         display: none;
@@ -100,10 +110,15 @@ body{
     .text__confimation2{
         font-size: 1rem;
     }
+    .texto_confirmacion2{
+        font-size: 1rem;
+    }
     .asistencia{
-        margin: 3rem;
+        margin: 2rem;
         padding: .5rem;
+
         font-size: 1.5rem;
+
     }
     .cantidadInvitados{
         margin-top: 2rem;
@@ -117,8 +132,10 @@ body{
     .texto_final{
         display: flex;
         justify-content: center;
+
         font-size: 1.5rem;
         margin-top: 8rem;
+
     }
     @keyframes typing {
         to {
