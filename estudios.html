@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="./assets-proyecto1/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets-proyecto1/fonts/poppins/poppins.css">
-    <link rel="stylesheet" href="./assets-proyecto1/css/reset.css">
-    <link rel="stylesheet" href="./assets-proyecto1/css/style.css">
-    <link rel="stylesheet" href="./assets-proyecto1/css/query.css">
-    <link rel="stylesheet" href="./assets-proyecto1/css/scroll.css">
+    <link rel="stylesheet" href="./static/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./static/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/query.css">
+    <link rel="stylesheet" href="./static/css/scroll.css">
 
     <title>Document</title>
 </head>
@@ -25,7 +25,7 @@
                 <div class="user-info__general">
     <!-- Información general del usuario -->
                     <div class="user-info__container-imagen">
-                        <img src="./assets-proyecto1/img/pro.jpeg" class="user-info__image" alt="Imagen de perfil del usuario">
+                        <img src="./static/img/pro.jpeg" class="user-info__image" alt="Imagen de perfil del usuario">
                     </div>
 
                     <h2 class="user-info__name">Carlos Morales</h2>
@@ -100,11 +100,11 @@
                 </div>
     <!-- Boton -->
                 <div class="user-info__buttons">
-                    <a href="./assets-proyecto1/documents/CV__Dev_Carlos-ES.pdf" title="link" class="user-info__btn">Descargar CV</a>
+                    <a href="./static/documents/CV__Dev_Carlos-ES.pdf" title="link" class="user-info__btn">Descargar CV</a>
                 </div>
     <!-- Footer -->
                 <footer class="user-info__footer">
-                    &copy; 2023 Carlos Morales
+                    &copy; 2024 Carlos Morales
                 </footer>
             </section>
         </aside>
@@ -131,6 +131,21 @@
                         </header>
 
                         <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">Mar-2024</h4>
+                                    <span class="timeline__company">IBM</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+                                
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Detector de textos</h3>
+                                    <p class="timeline__text">Desarrollo FullStack</p>
+                                </div>
+                            </article>
 
                             <article class="timelines__timeline">
 
@@ -188,6 +203,22 @@
                             <article class="timelines__timeline">
 
                                 <header class="timeline__header">
+                                    <h4 class="timeline__year">Ene-2024</h4>
+                                    <span class="timeline__company">IBM</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">FullStack</h3>
+                                    <p class="timeline__text">Certificación
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+
+                                <header class="timeline__header">
                                     <h4 class="timeline__year">04-Sep-2023</h4>
                                     <span class="timeline__company">IBM</span>
                                 </header>
@@ -226,7 +257,7 @@
                             <h2 class="resume__subtitle">Habilidades de <span class="subtitle__color">diseño</span></h2> 
                         </header>
 
-                        <div class="resume__skills">
+                        <!--<div class="resume__skills">
 
                             <article class="skills__title">
                                 <h4 class="skills__text">Diseño web</h4>
@@ -260,13 +291,21 @@
                                 <div class="skills__percentage skills__percentage--p4"></div>
                             </div>
 
-                        </div>
+                        </div>-->
+                        <ul class="knowledges__list">
+                                <li class="knowledges__option">Diseño MockUp</li>
+                                <li class="knowledges__option">Dsieño web</li>
+                                <li class="knowledges__option">Diseño Logos</li>
+                                <li class="knowledges__option">Diseño banners</li>
+                                <li class="knowledges__option">MongoDB</li>
+                                <li class="knowledges__option">UX/UI</li>
+                        </ul> <br>
 
                         <header class="resume__subheader">
                             <h2 class="resume__subtitle">Habilidades de <span class="subtitle__color">código</span></h2>
                         </header>
 
-                        <div class="resume__skills">
+                        <!--<div class="resume__skills">
                             <article class="skills__title">
                                 <h4 class="skills__text">Javascript</h4>
                                 <span class="skills__number">85%</span>
@@ -298,7 +337,23 @@
                             <div class="skills__progressbar">
                                 <div class="skills__percentage skills__percentage--p8"></div>
                             </div>
-                        </div>
+                        </div>-->
+                        <div class="resume__knowledges">
+                            <ul class="knowledges__list">
+                                <li class="knowledges__option">Python</li>
+                                <li class="knowledges__option">JavaScript</li>
+                                <li class="knowledges__option">React</li>
+                                <li class="knowledges__option">Flask</li>
+                                <li class="knowledges__option">MongoDB</li>
+                                <li class="knowledges__option">HTML/CSS</li>
+                                <li class="knowledges__option">Node</li>
+                                <li class="knowledges__option">Express</li>
+                                <li class="knowledges__option">Angular</li>
+                                <li class="knowledges__option">JQuery</li>
+                                <li class="knowledges__option">SQL</li>
+                                <li class="knowledges__option">Git/GitHub</li>
+                            </ul>
+                        </div> <br>
 
                         <header class="resume__subheader">
                             <h2 class="resume__subtitle">Áreas de conocimientos</h2>
@@ -328,7 +383,7 @@
 
                         <article class="certificates__certificate">
                             <div class="certificate__logo">
-                                <img src="./assets-proyecto1/img/IMB-Fron-End.png" alt="certificado" class="certificate__image">
+                                <img src="./static/img/IMB-Fron-End.png" alt="certificado" class="certificate__image">
                             </div>
 
                             <div class="certificates__content">
@@ -341,7 +396,7 @@
 
                         <article class="certificates__certificate">
                             <div class="certificate__logo">
-                                <img src="./assets-proyecto1/img/cerPla(1).png" alt="certificado" class="certificate__image">
+                                <img src="./static/img/cerPla(1).png" alt="certificado" class="certificate__image">
                             </div>
 
                             <div class="certificates__content">
@@ -359,7 +414,7 @@
             
         </main>
     </div>
-    <script src="./assets-proyecto1/js/script.js" defer></script>
+    <script src="./static/js/script.js" defer></script>
 </body>
 
 </html>
