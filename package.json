@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "resend": "^3.2.0"
-  }
+  },
+  "name": "portfolio__dev",
+  "description": "![image](https://github.com/CarlosMorales34/Portfolio__Dev/assets/121272363/9f33badf-f840-430a-8297-4e7902fef8d5)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
