@@ -1191,6 +1191,9 @@ body{
     margin-right: 1rem;
 }
 /* CSS para transición del texto */
+.text-content{
+    display: none;
+}
 .text-content__item {
     display: none;
     transition: opacity 0.5s ease-in-out;
