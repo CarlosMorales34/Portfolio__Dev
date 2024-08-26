@@ -1183,3 +1183,29 @@ body{
     width: 100%;
     height: 14rem;
 }
+.cv__select{
+    display: flex;
+    margin-top: .5rem;
+}
+.cv__leng{
+    margin-right: 1rem;
+}
+/* CSS para transición del texto */
+.text-content__item {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.text-content__item--transition {
+    opacity: 1;
+}
+
+.text-content__item--en {
+    opacity: 1;
+}
+
+/* Opcionalmente, puedes ocultar el texto en español cuando no está activo */
+.text-content__item--es {
+    opacity: 0;
+}
