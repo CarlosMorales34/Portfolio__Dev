@@ -468,12 +468,23 @@ body{
 .review__image-container {
     width: 100%;
 }
+.review__image-container--epack {
+    width: 100%;
+    /* background-color: #0056d2; */
+}
 .review__image {
     max-width: 10rem;
     margin: 0 auto;
     margin-top: -5.5rem;
     margin-bottom: 2rem;
     border-radius: 9rem;
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .22);
+}
+.review__image--epack{
+    max-width: 15rem;
+    margin: 0 auto;
+    margin-top: -1.5rem;
+    margin-bottom: 4rem;
     box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .22);
 }
 .review__description {
@@ -891,13 +902,21 @@ body{
     flex-wrap: wrap;
 }
 .gallery__item{
+    display: block;
     position: relative;
-    flex-basis: calc(32% - 1rem);
+    flex-basis: calc(30% - 1rem);
     padding: 1rem;
     margin-left: 1rem;
-    border: 2px solid black;
+    margin-top: 1rem;
     border-radius: 10px;
+}
+.gallery__item:hover{
+    border: 1px solid var(--color-secondary);
+    box-shadow: 10px 10px 10px -6px rgba(0, 0, 0, .22);
 
+}
+.gallery__item.hidden {
+    display: none; /* Oculta los elementos que no coinciden con el filtro */
 }
 .gallery__container-image{
     overflow: hidden;
@@ -908,6 +927,8 @@ body{
 
 .gallery__item:hover .gallery__image{
     transform: scale(1.1);
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .22);
+
 }
 .gallery__title{
     font-size: 1.6rem;
