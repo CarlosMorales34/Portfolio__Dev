@@ -1,129 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="./static/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./static/fonts/poppins/poppins.css">
-    <link rel="stylesheet" href="./static/css/reset.css">
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="./static/css/query.css">
+    <link
+      rel="stylesheet"
+      href="./static/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./static/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="./static/css/reset.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/query.css" />
 
-    <title>Document</title>
-</head>
+    <title>CarlosMoralesDev</title>
+    <link rel="icon" type="image/png" href="./static/img/Designer.jpeg">
+  </head>
 
-<body>• 
-    
+  <body>
+    •
+
     <!-- Layout principal -->
-        <div class="layout">
-
-            <aside class="layout__aside">
+    <div class="layout">
+      <aside class="layout__aside">
         <!-- Barra lateral usuario -->
-                <section class="aside__user--info">
-                    <div class="user-info__general">
-        <!-- Información general del usuario -->
-                        <div class="user-info__container-imagen">
-                            <img src="./static/img/pro.jpeg" class="user-info__image" alt="Imagen de perfil del usuario">
-                        </div>
+        <section class="aside__user--info">
+          <div class="user-info__general">
+            <!-- Información general del usuario -->
+            <div class="user-info__container-imagen">
+              <img
+                src="./static/img/pro.jpeg"
+                class="user-info__image"
+                alt="Imagen de perfil del usuario"
+              />
+            </div>
 
-                        <h2 class="user-info__name">Carlos Morales</h2>
-                        <h4 class="user-info__job">Desarrollador web</h4>
-                    </div>
-        <!-- Menú de navegación -->
-                    <nav class="layout__menu">
-                        <ul class="menu__list">
-                            <li class="menu__option">
-                                <a href="home.html" class="menu__link menu__link--active" title="link">
-                                    <i class="menu__icon fa-solid fa-house"></i>
-                                    <span class="menu__overlay">Home</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="aboutMe.html" class="menu__link" title="link">
-                                    <i class="menu__icon fa-solid fa-user"></i>
-                                    <span class="menu__overlay">Sobre mi</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="estudios.html" class="menu__link" title="link">
-                                    <i class="menu__icon fa-solid fa-graduation-cap"></i>
-                                    <span class="menu__overlay">Estudios</span>
-                                </a>
-                            </li>
-                            <li class="menu__option">
-                                <a href="portfolio.html" class="menu__link" title="link">
-                                    <i class="menu__icon fa-solid fa-briefcase"></i>
-                                    <span class="menu__overlay">Portafolio</span>
-                                </a>
-                            </li>
-                            <!-- <li class="menu__option">
+            <h2 class="user-info__name">Carlos Morales</h2>
+            <h4 class="user-info__job">Desarrollador web</h4>
+          </div>
+          <!-- Menú de navegación -->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a
+                  href="home.html"
+                  class="menu__link menu__link--active"
+                  title="link"
+                >
+                  <i class="menu__icon fa-solid fa-house"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="aboutMe.html" class="menu__link" title="link">
+                  <i class="menu__icon fa-solid fa-user"></i>
+                  <span class="menu__overlay">Sobre mi</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="estudios.html" class="menu__link" title="link">
+                  <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                  <span class="menu__overlay">Estudios</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="portfolio.html" class="menu__link" title="link">
+                  <i class="menu__icon fa-solid fa-briefcase"></i>
+                  <span class="menu__overlay">Portafolio</span>
+                </a>
+              </li>
+              <!-- <li class="menu__option">
                                 <a href="blog.html" class="menu__link" title="link">
                                     <i class="menu__icon fa-solid fa-book"></i>
                                     <span class="menu__overlay">Blog</span>
                                 </a>
                             </li> -->
-                            <li class="menu__option">
-                                <a href="contacto.html" class="menu__link" title="link">
-                                    <i class="menu__icon fa-solid fa-envelope"></i>
-                                    <span class="menu__overlay">Contacto</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-        <!-- Links redes sociales -->
-                    <div class="user-info__links">
-
-                        <ul class="links__social">
-                            <li class="social__option">
-                                <a href="https://github.com/CarlosMorales34" target="_blank" rel="noopener" title="link" class="social__link">
-                                    <i class="social__icon fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="links__social">
-                            <li class="social__option">
-                                <a href="https://www.linkedin.com/in/carlos-morales1134/" target="_blank" rel="noopener" title="link" class="social__link">
-                                    <i class="social__icon fa-brands fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- <ul class="links__social">
+              <li class="menu__option">
+                <a href="contacto.html" class="menu__link" title="link">
+                  <i class="menu__icon fa-solid fa-envelope"></i>
+                  <span class="menu__overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Links redes sociales -->
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__option">
+                <a
+                  href="https://github.com/CarlosMorales34"
+                  target="_blank"
+                  rel="noopener"
+                  title="link"
+                  class="social__link"
+                >
+                  <i class="social__icon fa-brands fa-github"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="links__social">
+              <li class="social__option">
+                <a
+                  href="https://www.linkedin.com/in/carlos-morales1134/"
+                  target="_blank"
+                  rel="noopener"
+                  title="link"
+                  class="social__link"
+                >
+                  <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- <ul class="links__social">
                             <li class="social__option">
                                 <a href="#" title="link" class="social__link">
                                     <i class="social__icon fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                         </ul> -->
+          </div>
+          <!-- Botón -->
+          <div class="user-info__buttons">
+            <!-- Enlace para descargar el CV, se abrirá en una nueva ventana o pestaña -->
+            <a
+              href="#"
+              id="cv-link"
+              title="link"
+              class="user-info__btn"
+              target="_blank"
+              >Descargar CV</a
+            >
 
-                    </div>
-        <!-- Botón -->
-                    <div class="user-info__buttons">
-                        <a href="./static/documents/CV__Dev_Carlos-ES.pdf" title="link" class="user-info__btn">Descargar CV</a>
-                    </div>
-        <!-- Footer -->
-                    <footer class="user-info__footer">
-                        &copy; 2024 Carlos Morales
-                    </footer>
-                </section>
-            </aside>
-            <!-- toggle menu responsive -->
-            <div class="layout__menu-toggle">
-                <i class="menu-toggle__icon fa-solid fa-bars"></i>
-                <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+            <!-- Selector para elegir el idioma -->
+            <div class="cv__select">
+              <input type="checkbox" id="checkbox-en" value="en" />
+              <label for="checkbox-en">English</label>
             </div>
 
-            <!-- Contenido principal -->
-            <main class="layout__content" id="container__texto">
-                <section class="content__page">
-                    <h1 class="page__name texto-escritura" id="frase1">Carlos Morales</h1>
-                    <h2 class="page__job texto-escritura" id="frase2"></h2>
-                </section>
-                
-            </main>
-        </div>kz
-    <script src="./static/js/script.js" defer></script>
-</body>
+            <!-- Contenedor para el texto que se actualiza con la selección del idioma -->
+            <div class="text-content">
+              <div class="text-content__inner">
+                <!-- El texto se actualizará dinámicamente -->
+                <div class="text-content__item text-content__item--es">
+                  Descargar CV
+                </div>
+                <div class="text-content__item text-content__item--en">
+                  Download CV
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <footer class="user-info__footer">&copy; 2024 Carlos Morales</footer>
+        </section>
+      </aside>
+      <!-- toggle menu responsive -->
+      <div class="layout__menu-toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+      </div>
 
+      <!-- Contenido principal -->
+      <main class="layout__content" id="container__texto">
+        <section class="content__page">
+          <h1 class="page__name texto-escritura" id="frase1">Carlos Morales</h1>
+          <h2 class="page__job texto-escritura" id="frase2"></h2>
+        </section>
+      </main>
+    </div>
+    kz
+    <script src="./static/js/script.js" defer></script>
+  </body>
 </html>

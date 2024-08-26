@@ -1,3 +1,45 @@
+//CV
+const cvPaths = {
+  es: './static/documents/CV__Dev_Carlos-ES.pdf',
+  en: './static/documents/CV__Dev_Carlos-EN.2.pdf'
+};
+
+// Define los textos para cada idioma
+const buttonText = {
+  es: 'Descargar CV',
+  en: 'Download CV'
+};
+
+// Selecciona los elementos del DOM
+const cvLink = document.getElementById('cv-link');
+const checkboxEn = document.getElementById('checkbox-en');
+
+// Inicializa el enlace de descarga en español por defecto
+cvLink.href = cvPaths['es'];
+cvLink.textContent = buttonText['es'];
+
+// Función para manejar la selección del checkbox
+function updateCvLink() {
+  if (checkboxEn.checked) {
+    // Cambia el texto y la ruta a inglés
+    cvLink.href = cvPaths['en'];
+    cvLink.textContent = buttonText['en'];
+  } else {
+    // Cambia el texto y la ruta a español
+    cvLink.href = cvPaths['es'];
+    cvLink.textContent = buttonText['es'];
+  }
+}
+
+// Función para manejar el clic en el enlace
+cvLink.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+  window.open(cvLink.href, '_blank'); // Abre el enlace en una nueva ventana o pestaña
+});
+
+// Añade un event listener al checkbox para actualizar el enlace y el texto
+checkboxEn.addEventListener('change', updateCvLink);
+
 // MAPA
 const currentUrl = window.location.pathname; 
 // scripts.js
