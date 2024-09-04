@@ -1,6 +1,6 @@
 //CV
 const cvPaths = {
-  es: './static/documents/CV__Dev_Carlos-ES.pdf',
+  es: './static/documents/CV__DevCarlos-ES.pdf',
   en: './static/documents/CV__Dev_Carlos-EN.2.pdf'
 };
 
