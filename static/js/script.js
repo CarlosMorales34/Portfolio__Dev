@@ -1,7 +1,7 @@
-//CV
+//Ruta del cv que sera descargado
 const cvPaths = {
-  es: './static/documents/CV__DevCarlos-ES.pdf',
-  en: './static/documents/CV__Dev_Carlos-EN.2.pdf'
+  es: './static/documents/CarlosMoralesCVEs.pdf',
+  en: './static/documents/CarlosMoralesCVEn.pdf'
 };
 
 // Define los textos para cada idioma
