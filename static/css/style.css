@@ -138,7 +138,6 @@ body{
     background-color: rgba(255, 255, 255, .20);
 }
 .user-info__buttons {
-    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 .user-info__btn {
@@ -1185,7 +1184,48 @@ body{
 }
 .cv__select{
     display: flex;
-    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.cv__select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.cv__select input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 36px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cv__select input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.cv__select input[type="checkbox"]:checked {
+    background: #2196F3;
+}
+
+.cv__select input[type="checkbox"]:checked::before {
+    transform: translateX(16px);
 }
 .cv__leng{
     margin-right: 1rem;
