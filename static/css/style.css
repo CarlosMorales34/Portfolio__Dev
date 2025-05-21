@@ -449,20 +449,29 @@ body{
 .reviews__container {
     display: flex;
     flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    gap: 2rem;
+    padding: 1rem;
 }
+
+.reviews__container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
 .reviews__review {
     width: 50%;
-    flex-basis: 50%;
-
+    flex: 0 0 auto;
     border: 2px solid var(--color-border-reviews);
     border-radius: 2rem;
-    padding-top: 0;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-    padding-bottom: 1.5rem;
-    margin-right: 2.5rem;
+    padding: 2.5rem;
     margin-top: 4.5rem;
     margin-bottom: 1rem;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .review__image-container {
     width: 100%;
@@ -472,6 +481,14 @@ body{
     /* background-color: #0056d2; */
 }
 .review__image {
+    max-width: 10rem;
+    margin: 0 auto;
+    margin-top: -5.5rem;
+    margin-bottom: 2rem;
+    border-radius: 9rem;
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .22);
+}
+.review__image--edson {
     max-width: 10rem;
     margin: 0 auto;
     margin-top: -5.5rem;
@@ -525,9 +542,11 @@ body{
 .clients__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .clients__item {
+    display: flex;
+    align-items: center;
     width: 14.5rem;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1251,4 +1270,42 @@ body{
 /* Opcionalmente, puedes ocultar el texto en español cuando no está activo */
 .text-content__item--es {
     opacity: 0;
+}
+
+.reviews__nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.reviews__nav-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.reviews__nav-btn:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+.reviews__nav-btn i {
+    font-size: 1.2rem;
+}
+
+.reviews__container {
+    cursor: grab;
+}
+
+.reviews__container:active {
+    cursor: grabbing;
 }

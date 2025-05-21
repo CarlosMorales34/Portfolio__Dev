@@ -139,6 +139,74 @@ const frasesDesarrollador = [
 
   iniciarEscritura();
 
+// Carrusel de reseñas
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewsContainer = document.querySelector('.reviews__container');
+    if (!reviewsContainer) return;
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    reviewsContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        reviewsContainer.style.cursor = 'grabbing';
+        startX = e.pageX - reviewsContainer.offsetLeft;
+        scrollLeft = reviewsContainer.scrollLeft;
+    });
+
+    reviewsContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        reviewsContainer.style.cursor = 'grab';
+    });
+
+    reviewsContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        reviewsContainer.style.cursor = 'grab';
+    });
+
+    reviewsContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - reviewsContainer.offsetLeft;
+        const walk = (x - startX) * 2;
+        reviewsContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    // Añadir botones de navegación
+    const reviewsSection = document.querySelector('.about__reviews');
+    if (reviewsSection) {
+        const navButtons = document.createElement('div');
+        navButtons.className = 'reviews__nav';
+        navButtons.innerHTML = `
+            <button class="reviews__nav-btn reviews__nav-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="reviews__nav-btn reviews__nav-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        `;
+        reviewsSection.appendChild(navButtons);
+
+        const prevBtn = navButtons.querySelector('.reviews__nav-prev');
+        const nextBtn = navButtons.querySelector('.reviews__nav-next');
+
+        prevBtn.addEventListener('click', () => {
+            reviewsContainer.scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            reviewsContainer.scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
 
 
 
